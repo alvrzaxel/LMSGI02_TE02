@@ -1,0 +1,209 @@
+/*****************************************************************************************
+*   Autor: Axel Álvarez Santos
+*   Módulo: LMGSI
+*   Unidad: 2
+*   Tarea: Tarea evaluativa 2.
+*   Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+*****************************************************************************************/
+
+/* INDEX/CUERPO */
+.fila {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*CUERPOPRIMERA FILA*/
+.divPrimeraPrimera {
+    width: 20%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divPrimeraPrimera img {
+    width: 400px;
+    position: absolute;
+    bottom: -60px;
+}
+
+.divPrimeraSegunda {
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divPrimeraSegunda img {
+    width: 600px;
+}
+
+.divPrimeraTercera {
+    width: 40%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divPrimeraTercera img {
+    width: 800px;
+    position: absolute;
+    bottom: -150px;
+}
+
+
+/*CUERPO/SEGUNDA FILA */
+.divSegundaPrimera {
+    width: 15%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divSegundaPrimera img {
+    width: 310px;
+    position: absolute;
+    bottom: 0px;
+    right: -20px;
+}
+
+.divSegundaSegunda {
+    width: 23%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divSegundaSegunda img {
+    width: 450px;
+    position: relative;
+    bottom: 40px;
+}
+
+.divSegundaTercera {
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divSegundaTercera h2 {
+    font-size: 2em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    color: #353535;
+}
+
+.divSegundaTercera p {
+    text-align: center;
+    margin-top: 0px;
+    color: #606060;
+}
+
+.divSegundaTercera:hover {
+    box-shadow: -3px -2px 7px #ffffff,
+    3px 3px 5px #3498db6e;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.divSegundaCuarta {
+    width: 20%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divSegundaCuarta img {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    bottom: -180px;
+}
+
+
+/* CUERPO/TERCERA FILA*/
+.divTerceraPrimera {
+    width: 40%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divTerceraPrimera img {
+    width: 850px;
+    position: absolute;
+    top: -160px;
+}
+
+.divTerceraSegunda {
+    background-color: #ecf0ec;
+    width: 15%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divTerceraSegunda img {
+    width: 285px;
+    position: absolute;
+    bottom: -30px;
+}
+
+.divTerceraTercera {
+    background-color: #ecf0ec;
+    width: 35%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.divTerceraTercera img {
+    width: 700px;
+    position: absolute;
+    top: -140px;
+}

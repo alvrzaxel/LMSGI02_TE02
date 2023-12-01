@@ -1,0 +1,93 @@
+<!--
+    **************************************************************************************
+    * Autor: Axel Álvarez Santos
+    * Módulo: LMGSI
+    * Unidad: 2
+    * Tarea: Tarea evaluativa 2.
+    * Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+    **************************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Cursos de fotografía on-line">
+        <meta name="keywords" content="curso, online, forografía">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon (icono en la pestaña del navegador) -->
+        <link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/stylesGeneral.css">
+        <link rel="stylesheet" href="../css/stylesCursosOnline.css">
+        <title>Cursos on-line de fotografía</title>
+    </head>
+
+    <body>
+        <header class="cabeceraPrincipal">
+            <section>
+                <figure>
+                    <img src="../img/index/indexLogo.png" alt="Logo">
+                </figure>
+                <h1>tu rincón on-line de fotografía</h1>
+            </section>
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li class="actual"><a href="./cursosOnline.html">Cursos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <section class="cursosCuerpo">
+
+            <!--Sección por cada curso para encuadrar e incluir breve presentación-->
+            <article class="entradaCurso">
+                <div>
+                    <img src="../img/cursosOnline/cursoFotografiaLogo.png" alt="Logo obturador">
+                </div>
+                <div id="fotografia">
+                    <h2>Curso de fotografía</h2>
+                    <p>Domina la cámara de totos y la escena para tomar fotografías increíbles.<br><span class="subraya">Curso de fotografía digital con prácticas.</span></p>
+                </div>
+                <a class="botonCurso" href="./cursoFotografia.html">¡Apúntate!</a>
+            </article>
+
+            <!--Sección por cada curso para encuadrar e incluir breve presentación-->
+            <article class="entradaCurso">
+                <div>
+                    <img src="../img/cursosOnline/cursoPhotoshopLogo.png" alt="Logo encuadre">
+                </div>
+                <div>
+                    <h2>Curso de Adobe Photoshop</h2>
+                    <p>Aprende todo sobre imagen digital con Adobe Photoshop y sé un experto: desde conceptos fundamentales hasta retoques avanzados.</p>
+                </div>
+                <a class="botonCurso" href="./cursoPhotoshop.html">¡Apúntate!</a>
+            </article>
+
+            <!--Sección por cada curso para encuadrar e incluir breve presentación-->
+            <article class="entradaCurso" id="disabled">
+                <div>
+                    <img src="../img/cursosOnline/cursoLightroomLogo.png" alt="Logo fotografías">
+                </div>
+                <div>
+                    <h2>Curso de Adobe Lightroom</h2>
+                    <p>Tus fotografías se verán increíbles con este curso de fotoedición con Adobe Lightroom Classic CC y Lightroom CC.</p>
+                <a class="botonCurso"><span id="proximamente">PRÓXIMAMENTE</span></a>
+                </div>
+            </article>
+        </section>
+        
+        <footer>
+            <section class="copyright">
+                    <p>
+                        &copy; 2023 Fotografías realizadas por Axel Álvarez Santos. Página web con fines educativos. <br>
+                        <span class="colorTerciario">Todos los derechos de fuentes y grafismos están reservados y pertenecen a sus autores.</span>
+                    </p>
+            </section>
+        </footer>
+    </body>
+</html>

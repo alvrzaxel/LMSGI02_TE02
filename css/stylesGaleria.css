@@ -1,0 +1,300 @@
+/*****************************************************************************************
+*   Autor: Axel Álvarez Santos
+*   Módulo: LMGSI
+*   Unidad: 2
+*   Tarea: Tarea evaluativa 2.
+*   Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+*****************************************************************************************/
+
+/* GALERÍA/CUERPO*/
+.galeria {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.galeria article {
+    display: flex;
+    width: 350px;
+    height: 610px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    align-items: center;
+}
+
+/*
+Hacemos uso de alguna novedad de css: Transiciones
+Marcamos el tiempo que durará
+Elegimos función ease para que la transición sea suave
+*/
+.galeria article:hover{
+    box-shadow: -3px -2px 7px #ffffff,
+    3px 3px 5px #3498db6e;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.galeria figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    padding-top: 20px;
+}
+
+.galeria img {
+    width: 115%;
+    height: auto;
+}
+
+.galeria h2 {
+    display: flex;
+    font-weight: lighter;
+    justify-content: center;
+}
+
+
+/*GALERIA/ARQUITECTURA+PAISAJES+MASCOTAS*/
+.galeriaEntradasCuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.galeriaEntradasCuerpo figure{
+    position: absolute;
+    bottom: -40px;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEntradaCuerpo {
+    font-family: 'roboto';
+    font-size: 10em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    opacity: 0.05;
+    margin-top: 0px;
+    margin-bottom: -110px;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+/* Con overflow:hidden recortamos lo que quede fuera del contenedor */
+.entrada {
+    background-color: #ecf0ec;
+    width: 1500px;
+    height: 320px;
+    margin: 40px;
+    border-radius: 42px 4px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    z-index: 1;
+}
+
+.fotoIzquierda {
+    width: 370px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fotoDerecha {
+    margin-left: 1130px;
+    width: 370px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.botonArriba {
+    width: 20px;
+    height: 20px;
+    padding: 10px 20px;
+    justify-self: center;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: black;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-out;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.arriba {
+    width: 120%;
+    transition: transform 0.3s ease-out;
+}
+
+.botonArriba:hover .arriba {
+    transform: translateY(-10px);
+}
+
+.botonArriba:hover {
+    transform: translateY(-5px);
+}
+
+.atras {
+    width: 120%;
+    transition: transform 0.3s ease-out;
+}
+
+.botonArriba:hover .atras {
+    transform: translateX(-10px);
+}
+
+.botonAtras:hover {
+    transform: translateX(-5px);
+}
+
+
+/*IMG/ARQUITECTURA*/
+.unoArquitectura img {
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+}
+
+.dosArquitectura img {
+    width: 100%;
+    position: absolute;
+    top: -75px;
+    right: 0;
+}
+
+.tresArquitectura img {
+    width: 100%;
+}
+
+/*IMG/PAISAJES */
+.unoPaisajes img {
+    width: 100%;
+    position: absolute;
+    top: -40px;
+}
+
+.dosPaisajes img {
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
+
+.tresPaisajes img {
+    width: 100%;
+}
+
+/*IMG/MASCOTAS */
+.unoMascotas img {
+    width: 100%;
+    position: absolute;
+    top: -50px
+}
+
+.dosMascotas img {
+    width: 100%;
+    position: absolute;
+    top: -65px;
+    right: 0px;
+}
+
+.tresMascotas img {
+    width: 130%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+/*TEXT/ENTRADAS*/
+.textoDerecha {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 375px;
+    padding-left: 20px;
+}
+
+.textoIzquierda {
+    position: absolute;
+    width: 1090px;
+    top: 0px;
+    left: 0px;
+    padding-left: 40px;
+    margin-right: 420px;
+}
+
+.textoDerecha h3 {
+    font-family: 'roboto';
+    font-weight: lighter;
+    margin-bottom: 0px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.textoIzquierda h3 {
+    font-family: 'roboto';
+    font-weight: lighter;
+    margin-bottom: 0px;
+    padding-left: 870px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.entrada h2 {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    text-transform: uppercase;
+
+}
+
+.textoDerecha ol li {
+    margin-bottom: -40px;
+    margin-left:  -15px;
+    font-size: 0.9em;
+}
+
+.textoDerecha p,
+.textoIzquierda p {
+    margin: 20px 20px 0px 0px;
+}
+
+.entrada p,
+.entrada a,
+.entrada li {
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+.entrada a {
+    color: #3498db;
+    font-size: 1em;
+}

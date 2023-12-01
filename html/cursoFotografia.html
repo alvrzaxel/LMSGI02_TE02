@@ -1,0 +1,130 @@
+<!--
+    **************************************************************************************
+    * Autor: Axel Álvarez Santos
+    * Módulo: LMGSI
+    * Unidad: 2
+    * Tarea: Tarea evaluativa 2.
+    * Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+    **************************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Cursos de fotografía on-line">
+        <meta name="keywords" content="curso, online, forografía">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon (icono en la pestaña del navegador) -->
+        <link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/stylesGeneral.css">
+        <link rel="stylesheet" href="../css/stylesCursosOnline.css">
+        <title>Cursos on-line de fotografía</title>
+    </head>
+
+    <body>
+        <header class="cabeceraPrincipal">
+            <section>
+                <figure>
+                    <img src="../img/index/indexLogo.png" alt="Logo">
+                </figure>
+                <h1>tu rincón on-line de fotografía</h1>
+            </section>
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li class="actual"><a href="./cursosOnline.html">Cursos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <section class="cursoOnlineCuerpo">
+            <!--Articulo para agrupar vídeo de presentación y detalles del curso en texto -->
+            <article class="cursoOnlinePresentacion">
+                <div class="cursoVideo">
+                   <video controls muted>
+                    <source src="../video/cursosOnline/videoCursoFotografia.mp4" type="video/mp4">
+                    <source src="../video/cursosOnline/videoCursoFotografia.webm" type="video/webm">
+                   </video>
+                   <p>¡Totalmente GRATIS!</p>
+                   <p>Plaza limitadas*</p>
+                </div>
+                <div class="cursoTexto">
+                    <h2>Curso de fotografía</h2>
+                    <h3>¿Cómo funciona?</h3>
+                    <ul>
+                        <li>Formado por 10 lecciones que puedes seguir a tu ritmo, sin horarios.</li>
+                        <li>En el <span class="negrita">Aula Virtual</span> encontrarás todos los recursos necesarios para seguir el curso.</li>
+                        <li>Cada <span class="negrita">lección</span> incluye texto, fotos, test y vídeos.</li>
+                        <li>Más de 3 horas de video tutoriales.</li>
+                        <li>Tendrás <span class="negrita">acceso para siempre</span> a toda la documentación del curso.</li>
+                        <li>Con soporte y asesoramiento<span class="negrita">personalizado</span>.</li>
+                    </ul>
+                    <h3>¿Qué aprenderás?</h3>
+                    <ul>
+                        <li>Todo lo necesario para <span class="negrita">dominar tu cámara</span>.</li>
+                        <li>Aprenderás a trabajar de forma <span class="negrita">manual</span> y semi automática.</li>
+                        <li>Cómo enfocar y controlar la <span class="negrita">profundidad de campo</span>.</li>
+                        <li>Cómo congelar o captar el <span class="negrita">movimiento</span>.</li>
+                        <li>Sabrás cómo <span class="negrita">exponer</span> correctamente y/o compensar la exposición.</li>
+                        <li>Hablaremos de <span class="negrita">composición</span>, <span class="negrita">luz</span> y <span class="negrita">momento</span>.</li>
+                        <li>El <span class="negrita">Raw</span>, el flash y los <span class="negrita">filtros</span> básicos de fotografía.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!--Agrupamos información sobre el curso y el formulario para ponerse en contacto-->
+            <article class="cursoCuerpoFormulario">
+                <h2>¡Inscríbete!</h2>
+                <h3>Plazas limitadas</h3>
+                <!--
+                    Input nombreCurso recibe autofocus
+                    Input nombreCurso y mailCurso son requeridos y se informa de ello
+                    Input asunto se le asiga un valor y es bloqueado para saber desde qué apartado de nuestra página se está enviado el formulario
+                    Se crean tres niveles de conocimiento, se inicia por defecto en "Principiante"
+                -->
+                <form  class="cursoFormulario" action="mailto:axalvarez@birt.eus" method="post" autocomplete="off">
+                    <p>
+                        <label for="nombreCurso" class="etiquetaFormulario">Nombre</label>
+                        <input type="text" name="Nombre" id="nombreCurso" autofocus required placeholder="Campo obligatorio*">
+                    </p>
+                    <p>
+                        <label for="emailCurso" class="etiquetaFormulario">Email</label>
+                        <input type="Email" name="email" id="emailCurso" required placeholder="Campo obligatorio*">
+                    </p>
+                    <p>
+                        <label for="asuntoCurso" class="etiquetaFormulario">Asunto</label>
+                        <input type="text" name="Asunto" id="asuntoCurso" value="Curso de fotografía" readonly>
+                    </p>
+                    <p>
+                        <label for="nivelPrincipiante" class="etiquetaFormulario">Nivel</label>
+                        <label >
+                            <input name="Nivel" id="nivelPrincipiante" type="radio" value="Principiante" checked>Principiante</label>
+                        <label>
+                            <input name="Nivel" id="nivelIntermedio" type="radio" value="intermedio">Intermedio</label>
+                        <label>
+                            <input name="Nivel" id="nivelAvanzado" type="radio" value="Avanzado">Avanzado </label>
+                    </p>
+                    <p>
+                        <label for="mensajeCurso" class="etiquetaFormulario">Mensaje</label>
+                        <textarea name="Mensaje" id="mensajeCurso" cols="40" rows="8"></textarea>
+                    </p>
+                    <input type="submit" id="botonInscribeme" value="¡Inscríbeme!">
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <section class="copyright">
+                    <p>
+                        &copy; 2023 Fotografías realizadas por Axel Álvarez Santos. Página web con fines educativos. <br>
+                        <span class="colorTerciario">Todos los derechos de fuentes y grafismos están reservados y pertenecen a sus autores.</span>
+                    </p>
+            </section>
+        </footer>
+    </body>
+</html>

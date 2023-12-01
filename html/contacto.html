@@ -1,0 +1,122 @@
+<!--
+    **************************************************************************************
+    * Autor: Axel Álvarez Santos
+    * Módulo: LMGSI
+    * Unidad: 2
+    * Tarea: Tarea evaluativa 2.
+    * Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+    **************************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Cursos de fotografía on-line">
+        <meta name="keywords" content="curso, online, forografía">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon (icono en la pestaña del navegador) -->
+        <link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/stylesGeneral.css">
+        <link rel="stylesheet" href="../css/stylesContacto.css">
+        <title>Cursos on-line de fotografía</title>
+    </head>
+
+    <body>
+        <header class="cabeceraPrincipal">
+            <section>
+                <figure>
+                    <img src="../img/index/indexLogo.png" alt="Logo">
+                </figure>
+                <h1>tu rincón on-line de fotografía</h1>
+            </section>
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../html/galeria.html">Galería</a></li>
+                        <li><a href="../html/cursosOnline.html">Cursos</a></li>
+                        <li class="actual"><a href="../html/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <section class="contactoCuerpo">
+            <aside class="redesSocialesCuerpo">
+                <h2>Encuéntrame en:</h2>
+                <div>
+                    <a href="https://twitter.com" target="_blank"><img src="../img/contacto/redesSociales/twitter.png" alt="Logo Twitter"></a>
+                </div>
+                <div>
+                    <a href="https://instagram.com" target="_blank"><img src="../img/contacto/redesSociales/instagram.png" alt="Logo Instagram"></a>
+                </div>
+                <div>
+                    <a href="https://unsplash.com/es" target="_blank"><img src="../img/contacto/redesSociales/unsplash.png" alt="Logo Unsplash"></a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../img/contacto/redesSociales/youtube.png" alt="Logo Youtube"></a>
+                </div>
+            </aside>
+
+            <!--Agrupamos título y formulario para ponerse en contacto-->
+            <article class="cuerpoContactoFormulario">
+                <h2>Envía tus comentarios</h2>
+                <p class="subTítuloFormulario">Puedes utilizar el formulario de abajo para enviar tus comentarios y sugerencias</p>
+                <!--
+                    Input nombreCurso recibe autofocus
+                    Input nombreCurso y mailCurso son requeridos y se informa de ello
+                    Se crea un desplegable para seleccionar diferentes asuntos preestablecidos
+                -->
+                <form  class="cursoFormulario" action="mailto:axalvarez@birt.eus" method="post" autocomplete="off">
+                    <p>
+                        <label for="nombre" class="etiquetaContactoForm">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Campo obligatorio*" autofocus>
+                    </p>
+                    <p>
+                        <label for="apellidos" class="etiquetaContactoForm">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos">
+                    </p>
+                    <p>
+                        <label for="email" class="etiquetaContactoForm">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Campo obligario*">
+                    </p>
+                    <p>
+                        <label for="asunto" class="etiquetaContactoForm">Asunto</label>
+                        <select name="asunto" id="asunto">
+                            <option value="Curso Fotografía">Curso de fotografía</option>
+                            <option value="Curso Photoshop">Curso de Adobe Photoshop</option>
+                            <option value="Curso Lightroom"> Curso de Adobe Lightroom</option>
+                            <option value="Sugerencias">Sugerencias</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comentario" class="etiquetaContactoForm">Comentario</label>
+                        <textarea name="mensaje" id="comentario" cols="50" rows="8"></textarea>
+                    </p>
+                    <input type="submit" id="botonEnviarConsulta" value="Enviar consulta">
+                </form>
+            </article>
+            
+            <article class="cuerpoResumenCursos">
+                <aside>
+                    <h2>Cursos:</h2>
+                    <a href="./cursoFotografia.html"><img src="../img/contacto/cursosOnlineResumen/cursoFotografiaPresentacion.png" alt="Captura video Curso Fotografía"></a>
+                    <a href="./cursoPhotoshop.html"><img src="../img/contacto/cursosOnlineResumen/cursoPhotoshopPresentacion.png" alt="Captura video Curso Adobe Photoshop"></a>
+                    <img src="../img/contacto/cursosOnlineResumen/cursoLightroomPresentacion.JPG" alt="Captura video Curso Adobe Lightroom">
+                    <p>*Próximamente</p>
+                </aside>
+            </article>
+        </section>
+
+        <footer>
+            <section class="copyright">
+                    <p>
+                        &copy; 2023 Fotografías realizadas por Axel Álvarez Santos. Página web con fines educativos. <br>
+                        <span class="colorTerciario">Todos los derechos de fuentes y grafismos están reservados y pertenecen a sus autores.</span>
+                    </p>
+            </section>
+        </footer>
+    </body>
+</html>

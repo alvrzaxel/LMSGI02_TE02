@@ -1,0 +1,161 @@
+/*****************************************************************************************
+*   Autor: Axel Álvarez Santos
+*   Módulo: LMGSI
+*   Unidad: 2
+*   Tarea: Tarea evaluativa 2.
+*   Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+*****************************************************************************************/
+
+/*IMPORTAMOS FUENTES DE TEXTO */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap');
+
+/*DESPLAZAMIENTO SUAVE EN TODAS LAS PÁGINAS*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*CUERPO DE TODAS NUESTRAS PÁGINAS*/
+body {
+    background-color: #ecf0ec;
+    font-family: 'roboto', 'calibri', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    scroll-behavior: smooth;
+}
+
+/*ESTILOS PARA FORMATEAR TEXTO*/
+.subraya {
+    text-decoration: underline;
+}
+
+.negrita {
+    font-weight: bold;
+    font-weight: 1500;
+}
+
+.textoNegro {
+    color: black;
+}
+
+.colorSecundario {
+    color: #606060;
+}
+
+.colorTerciario {
+    color: #a0a2a0;
+}
+
+/*BODY/CABECERA*/
+.cabeceraPrincipal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cabeceraPrincipal section {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cabeceraPrincipal figure {
+    display: flex;
+    align-items: flex-end;
+    width: 5%;
+    padding-left: 50px;
+    position: relative;
+}
+
+.cabeceraPrincipal img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cabeceraPrincipal h1 {
+    width: 90%;
+    font-family: 'Indie Flower';
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    margin-left: -20px;
+}
+
+
+/*CABECERA/MENÚ*/
+.menu {
+    display: flex;
+    margin-right: 55px;
+    position: relative;
+}
+
+/*Aplicamos box shadow de horizontal y vertical*/
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 4px 30px 4px 4px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    margin-bottom: 1px;
+}
+
+.menu ul li {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 6px 25px;
+    margin: 20px 40px 20px 15px;
+    font-size: 1.1em;
+}
+
+.menu ul li:hover {
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+/*Destacamos la página en la que estamos*/
+.actual {
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+/*BODY/FOOTER*/
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    width: 94.5%;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px 4px 30px 30px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    text-align: center;
+}
+

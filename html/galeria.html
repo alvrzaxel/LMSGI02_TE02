@@ -1,0 +1,78 @@
+<!--
+    **************************************************************************************
+    * Autor: Axel Álvarez Santos
+    * Módulo: LMGSI
+    * Unidad: 2
+    * Tarea: Tarea evaluativa 2.
+    * Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+    **************************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Cursos de fotografía on-line">
+        <meta name="keywords" content="curso, online, forografía">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon (icono en la pestaña del navegador) -->
+        <link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/stylesGeneral.css">
+        <link rel="stylesheet" href="../css/stylesGaleria.css">
+        <title>Cursos on-line de fotografía</title>
+    </head>
+
+    <body>
+        <header class="cabeceraPrincipal">
+            <section>
+                <figure>
+                    <img src="../img/index/indexLogo.png" alt="Logo">
+                </figure>
+                <h1>tu rincón on-line de fotografía</h1>
+            </section>
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li class="actual"><a href="./galeria.html">Galería</a></li>
+                        <li><a href="./cursosOnline.html">Cursos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <section class="galeria">
+            <!--Creamos una tarjeta por cada categoría para representarla-->
+            <article>
+                <figure>
+                    <a href="./galeriaArquitectura.html"><img src="../img/galeria/galeriaArquitectura/galeriaArquitecturaPresentacion.jpg" alt=" Edificio Lisboa, Portugal"></a>
+                </figure>
+                <a href="./galeriaArquitectura.html"><h2>Arquitectura</h2></a>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="./galeriaPaisajes.html"><img src="../img/galeria/galeriaPaisajes/galeriaPaisajesPresentacion.jpg" alt="Arbol atardecer Pamplona, Navarra"></a>
+                </figure>
+                <a href="./galeriaPaisajes.html"><h2>Paisajes</h2></a>
+            </article>
+
+            <article>
+                <figure>
+                    <a href="./galeriaMascotas.html"><img src="../img/galeria/galeriaMascotas/galeriaMascotasPresentacion.jpg" alt="Gato común tumbado"></a>
+                </figure>
+                <a href="./galeriaMascotas.html"><h2>Mascotas</h2></a>
+            </article>
+        </section>
+
+        <footer>
+            <section class="copyright">
+                    <p>
+                        &copy; 2023 Fotografías realizadas por Axel Álvarez Santos. Página web con fines educativos. <br>
+                        <span class="colorTerciario">Todos los derechos de fuentes y grafismos están reservados y pertenecen a sus autores.</span>
+                    </p>
+            </section>
+        </footer>
+    </body>
+</html>

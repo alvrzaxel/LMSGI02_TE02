@@ -1,0 +1,183 @@
+/*****************************************************************************************
+*   Autor: Axel Álvarez Santos
+*   Módulo: LMGSI
+*   Unidad: 2
+*   Tarea: Tarea evaluativa 2.
+*   Descripción: Desarrollo del sitio web diseñado en la primera tarea de evaluación.
+*****************************************************************************************/
+
+/*CONTACTO/redesSOCIALES*/
+.contactoCuerpo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.redesSocialesCuerpo {
+    width: 18%;
+    min-width: 220px;
+    margin: 10px 20px 20px 20px;
+    height: 630px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.redesSocialesCuerpo div {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 45px;
+    overflow: hidden;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSocialesCuerpo h2 {
+    margin-top: -20px;
+    margin-bottom: 30px;
+
+}
+
+.redesSocialesCuerpo a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.redesSocialesCuerpo img {
+    width: 55%;
+}
+
+
+/*CONTACTO/FORMULARIO*/
+.cuerpoContactoFormulario {
+    width: 50%;
+    min-width: 650px;
+    margin: 20px;
+    height: 620px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    position: relative;
+}
+
+.cuerpoContactoFormulario h2 {
+    position: absolute;
+    left: 50px;
+}
+
+.subTítuloFormulario {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+}
+
+.contactoFormulario {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+
+.etiquetaContactoForm {
+    float: left;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contactoFormulario #nombre #apellidos #email #asunto #mensaje {
+    padding: 50px;
+}
+
+#nombre, #apellidos, #email, #asunto {
+    background-color: #ebeceb;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 15px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+#asunto {
+    width: 313px;
+}
+
+#comentario {
+    background-color: #ebeceb;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+#botonEnviarConsulta {
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: black;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 325px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+}
+
+#botonEnviarConsulta:hover {
+    background-color: #3498db;
+}
+
+
+/*CONTACTO/resumenCURSOS*/
+.cuerpoResumenCursos {
+    background-color: #ecf0ec;
+    width: 18%;
+    min-width: 300px;
+    margin: 20px;
+    height: 620px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.cuerpoResumenCursos aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.cuerpoResumenCursos img {
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 35px;
+    box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.cuerpoResumenCursos p {
+    font-size: .8em;
+    text-align: center;
+    margin-top: 3px;
+}
